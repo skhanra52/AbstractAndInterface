@@ -1,11 +1,9 @@
 public abstract  class ProductForSale {
 
-    public String name;
-    public String type;
-    public int price;
-    public String description;
-
-    public ProductForSale(){}
+    protected String name;
+    protected String type;
+    protected double price;
+    protected String description;
 
     public ProductForSale(String name, String type, String description, int price){
         this.name = name;
@@ -14,14 +12,18 @@ public abstract  class ProductForSale {
         this.description = description;
     }
 
-    public int getSalesPrice(int quantity){
-        return quantity * price;
+    public double getSalesPrice(int qty){
+        return qty * price;
     }
 
-    public void printPricedItem(int quantity){
-        System.out.println("Item type: "+ type+", "+description +", item available for sale: " +quantity );
+    public void printPricedItem(double qty){
+
+        System.out.println("Product Name - "+name+ ", " +
+                "Order qty - "+qty+ ", ");
+//        System.out.println("Item type: "+ type+", "+description +", item available for sale: " +qty );
+//        System.out.printf("%S qty at $%8.2f each, %-15s %35s %n", qty, price, type, description);
     }
 
-    public abstract void showDetails(ProductForSale productForSale);
+    public abstract void showDetails();
 
 }
