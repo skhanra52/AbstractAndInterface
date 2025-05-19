@@ -18,7 +18,7 @@ public abstract  class ProductForSale {
 
     public void printPricedItem(double qty){
 
-        System.out.println("Product Name - "+name+ ", " +
+        System.out.print("Product Name - "+name+ ", " +
                 "Order qty - "+qty+ ", ");
 //        System.out.println("Item type: "+ type+", "+description +", item available for sale: " +qty );
 //        System.out.printf("%S qty at $%8.2f each, %-15s %35s %n", qty, price, type, description);
