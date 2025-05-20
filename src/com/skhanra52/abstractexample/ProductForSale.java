@@ -1,3 +1,5 @@
+package com.skhanra52.abstractexample;
+
 public abstract  class ProductForSale {
 
     protected String name;

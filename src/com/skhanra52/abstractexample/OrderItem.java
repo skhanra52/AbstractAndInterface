@@ -1,3 +1,5 @@
+package com.skhanra52.abstractexample;
+
 public class OrderItem {
 
     public int quantity;
